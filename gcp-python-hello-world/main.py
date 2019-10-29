@@ -1,11 +1,15 @@
-def http(request):
-    """Responds to any HTTP request.
-    Args:
-        request (flask.Request): HTTP request object.
-    Returns:
-        The response text or any set of values that can be turned into a
-        Response object using
-        `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
-    """
-    return f'Hello World!'
+import json
+import datetime
+
+from google.cloud import storage
+
+storage_client = storage.Client()
+
+bucket_name = 'sls-gcp-python-hello-world-dev-1571718042216'
+
+def endpoint(request):
+    return json.dumps(request.files, indent=4)
+
+
+# http -f POST example.com/jobs name='John Smith' cv@~/Documents/cv.pdf
 

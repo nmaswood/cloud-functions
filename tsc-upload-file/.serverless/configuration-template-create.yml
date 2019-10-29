@@ -1,0 +1,3 @@
+resources:
+  - type: storage.v1.bucket
+    name: sls-gcp-ts-upload-dev-1572157357269

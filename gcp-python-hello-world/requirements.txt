@@ -1,1 +1,1 @@
-numpy
+google-cloud-storage

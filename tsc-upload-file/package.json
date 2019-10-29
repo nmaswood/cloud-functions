@@ -1,0 +1,19 @@
+{
+  "name": "gcp-node-typescript-simple",
+  "version": "0.1.0",
+  "description": "Simple HTTP example for GCP functions by Serverless framework with Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "serverless.com",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-google-cloudfunctions": "^1.2.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^4.0.0"
+  }
+}

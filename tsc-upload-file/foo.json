@@ -1,0 +1,15 @@
+{
+  "type": "cloudfunctions.v1beta2.function",
+  "name": "gcp-python-hello-world-dev-first",
+  "properties": {
+    "location": "us-central1",
+    "availableMemoryMb": 256,
+    "timeout": "60s",
+    "function": "endpoint",
+    "sourceArchiveUrl": "gs://sls-gcp-python-hello-world-dev-1571718042216/serverless/gcp-python-hello-world/dev/1572156861733-2019-10-27T06:14:21.733Z/gcp-python-hello-world.zip",
+    "labels": {},
+    "httpsTrigger": {
+      "url": "path"
+    }
+  }
+}

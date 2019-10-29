@@ -1,0 +1,16 @@
+resources:
+  - type: storage.v1.bucket
+    name: sls-gcp-ts-upload-dev-1572157357269
+  - type: cloudfunctions.v1beta2.function
+    name: gcp-ts-upload-dev-first
+    properties:
+      location: us-central1
+      availableMemoryMb: 256
+      runtime: nodejs10
+      timeout: 60s
+      function: http
+      sourceArchiveUrl: >-
+        gs://sls-gcp-ts-upload-dev-1572157357269/serverless/gcp-ts-upload/dev/1572158816851-2019-10-27T06:46:56.851Z/gcp-ts-upload.zip
+      labels: {}
+      httpsTrigger:
+        url: path
